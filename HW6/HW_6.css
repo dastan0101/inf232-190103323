@@ -1,0 +1,58 @@
+#full {
+	margin: 0px; 
+}
+
+#menu {
+	background-color: red;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.image {
+	background: url(studio.jpg);
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.products {
+	display: flex;
+	justify-content: center;
+	background-color: aqua;
+	height: 200px;
+}
+
+.product {
+	display: inline;
+	max-height: 50px;
+	margin: 20px;
+	background-color: red;
+	justify-content: center;
+}
+
+.im {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.arr {
+	max-height: 30px;
+	max-width: 30px;
+	display: flex;
+
+}
+
+#xxx {
+	margin-top: 350px;
+	color: orange;
+	font-weight: bold;
+
+}
+
+a {
+	margin: 20px;
+	font-size: 26px;
+}
