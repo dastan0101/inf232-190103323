@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Work 5</title>
+	<script src="HW_5.js"></script>
+</head>
+<body>
+	<h3>1-exercise</h3>
+	<table>
+		<tr>
+			<td>Chicken:</td>
+			<td><input type="text" id="id_1" onchange="total_number()"></td>
+			<td>Cow:</td>
+			<td><input type="text" id="id_2" onchange="total_number()"></td>
+		    <td>Pig:</td>
+			<td><input type="text" id="id_3" onchange="total_number()"></td>
+			<td>Total number:</td>
+			<td><input type="text" id="id_4"></td>
+		</tr>
+	</table>
+
+
+	<h3>2-exercise</h3>
+	<table>
+		<tr>
+			<td><input type="text" id="ex_2"></td>
+			<td><button onclick="isPlural()">plural</button></td>
+		</tr>
+		<tr>
+			<td>
+				<p id="ex_2_2"></p>
+			</td>
+			
+		</tr>
+	</table>
+
+
+	<h3>3-exercise</h3>
+	<table>
+		<tr>
+			<td><input type="text" id="ex_3_1"></td>
+			<td><input type="text" id="ex_3_2"></td>
+			<td><input type="text" id="ex_3_3"></td>
+
+			<td>
+				<button onclick="equalSlices(document.getElementById('ex_3_1').value, 
+					document.getElementById('ex_3_2').value, 
+					document.getElementById('ex_3_3').value)">equal
+				</button>
+		    </td>
+		</tr>
+		<tr>
+			<td><p id="ex_3_4"></p></td>
+		</tr>
+	</table>
+
+
+	<h3>4-exercise</h3>
+	<table>
+		<tr>
+			<td>
+				<label>Enter payment1:</label>
+				<input type="text" id="ex_4_1">
+				<label> Enter payment2:</label>
+				<input type="text" id="ex_4_2">
+				<label> Enter payment3:</label>
+				<input type="text" id="ex_4_3">
+			</td>
+			<td>
+				<button onclick="difference(document.getElementById('ex_4_1').value,
+					document.getElementById('ex_4_2').value,
+					document.getElementById('ex_4_3').value)">Compare and difference
+				</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="ex_4_4"></p>
+			</td>
+		</tr>
+	</table>
+
+
+	<h3>5-exercise</h3>
+	<table>
+		<tr>
+			<td>
+				<label>Please input argument:</label>
+				<input type="text" id="ex_5">
+				</td>
+			<td>
+				<button onclick="findDigitAmount(document.getElementById('ex_5').value)">length
+				</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="ex_5_2"></p>
+			</td>
+		</tr>
+	</table>
+
+
+	<h3>6-exercise</h3>
+	<table>
+		<tr>
+			<td>
+				<label>Enter the number:</label>
+				<input type="text" id="ex_6">
+			</td>
+			<td>
+				<button onclick="cubes(document.getElementById('ex_6').value)">Cubes in the range
+				</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="ex_6_2"></p>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
