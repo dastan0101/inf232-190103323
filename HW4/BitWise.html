@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bit Wise</title>
+
+	<script type="text/javascript">
+		var a,b,result;
+		function setValues() {
+			a = document.getElementById("a").value;
+			b = document.getElementById("b").value;
+		}
+		function zero_fill_left() {
+			setValues();
+			result = a << b;
+			document.getElementById("r").value = result;
+		}
+
+
+	</script>
+</head>
+<body>
+	<input id="a" type="text" name="a">
+	<input id="b" type="text" name="b">
+	<input id="r" type="text" name="r">
+	<br>
+	<input type="button" onclick="zero_fill_left()" value="<<">
+</body>
+</html>

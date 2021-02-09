@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+
+	<script type="text/javascript">
+		var a, result;
+		function setA() {
+			a = document.getElementById("demo").value;
+		}
+
+		function round() {
+			setA();
+			result = Math.round(a);
+			document.Dastan.input.value = result;
+		}
+
+		function square() {
+			setA();
+			result = Math.sqrt(a);
+			document.Dastan.input.value = result;
+		}
+		function mult() {
+			setA();
+			document.Dastan.input.value += " * ";
+		}
+		function equal() {
+			document.Dastan.input.value = '' + eval(Dastan.input.value);
+		}
+		function roundUp() {
+			setA();
+			result = Math.ceil(a);
+			document.Dastan.input.value = result;
+		}
+		function roundDown() {
+			setA();
+			result = Math.floor(a);
+			document.Dastan.input.value = result;
+		}
+		function sin() {
+			setA();
+			result = Math.sin(a);
+			document.Dastan.input.value = result;
+		}
+		function cos() {
+			setA();
+			result = Math.cos(a);
+			document.Dastan.input.value = result;
+		}
+		function clear() {
+			document.getElementById("demo").innerHTML = '';
+		}
+	</script>
+</head>
+<body>
+	<form name="Dastan">
+		<table border="4">
+			<tr>
+				<td>
+					<input id="demo" type="text" name="input">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="button" onclick="round()" value="round">
+					<input type="button" onclick="mult()" value=" * ">		
+					<input type="button" onclick="square()" value="square">
+					<input type="button" onclick="equal()" value=" = ">		
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="button" onclick="roundUp()" value="rUp">
+					<input type="button" onclick="roundDown()" value="rDown">		
+					<input type="button" onclick="sin()" value="sin">
+					<input type="button" onclick="cos()" value="cos">		
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<!-- <input type="button" onclick="clear()" value=" C "> -->
+					<button onclick="clear()">C</button>
+				</td>
+			</tr>
+	    </table>
+	</form>
+	
+</body>
+</html>

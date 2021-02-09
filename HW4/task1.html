@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Round</title>
+
+	<script type="text/javascript">
+		var a,b,result;
+		function setValues() {
+			a = Number(document.getElementById("a").value);
+			b = Number(document.getElementById("b").value);
+		}
+		function sum() {
+			setValues();
+			result = a + b;
+			alert(result);
+		}
+		function round() {
+			setValues();
+			result = Math.round(a);
+			alert(result);
+		}
+
+		
+	</script>
+</head>
+<body>
+	<div>
+		<input id="a" type="text" name="">
+		<input id="b" type="text" name="">
+		<input type="button" onclick="sum()" value="sum">
+		<input type="button" onclick="round()" value="round">
+	</div>
+</body>
+</html>
