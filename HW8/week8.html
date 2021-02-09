@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 8</title>
+	<script type="text/javascript">
+		function check() {
+			var checkBox = document.getElementById("chbox");
+			var text = document.getElementById("p1");
+			if (checkBox.checked == true){
+			    text.style.display = "block";
+			} else {
+			     text.style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="date" name="bday" min="2000-01-01">
+	<input type="number" name="" min="1" max="5">
+	<input type="file" name="img">
+	<form action="/action_page.php">
+		Country code: <input type="text" name="account" pattern="[A-Za-z]{3}" title="Only 3 letters!">
+		<input type="submit">
+	</form>
+
+
+	<div id="pasword_part">
+		<form>
+			Pasword: <input type="pasword" name="pw" pattern=".{6,}">
+			<input type="submit" name="">
+		</form>
+
+		<form>
+			Pasword 2: <input type="pasword" name="pas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+			<input type="submit" name="">
+		</form>
+	</div>
+
+
+	
+
+	<div id="checkbox_part">
+		<form>
+			Checkbox: <input type="checkbox" id="chbox" onclick="check()">
+		</form>
+		<p id="p1" style="display: none;">Checkbox is CHECKED!</p>
+	</div>
+	
+
+
+	<div id="radio_part">
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+	</div>
+	
+	
+</body>
+</html>

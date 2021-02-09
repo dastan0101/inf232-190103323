@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laboratory 8</title>
+	<link rel="stylesheet" type="text/css" href="Laboratory_8.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#bn1").mouseenter(function() {
+				$("#div1").slideDown();
+				$("#div2").slideDown();
+			})
+			$("#bn1").mouseout(function() {
+				$("#div1").slideUp();
+				$("#div2").slideUp();
+			})
+		})
+
+		$(document).ready(function() {
+			$("#bn2").mouseenter(function() {
+				$("#div3").slideDown();
+				$("#div4").slideDown();
+			})
+			$("#bn2").mouseout(function() {
+				$("#div3").slideUp();
+				$("#div4").slideUp();
+			})
+		})
+
+	</script>
+</head>
+<body>
+	<div id="demo">
+		<div id="demo1">
+			<div class="div0" id="div1">Click to</div>
+			<button class="btn btn-danger" class="bn" id="bn1">DOWNLOAD</button>
+			<div class="div0" id="div2">Apache Lucene 8.7.0</div>
+		</div>
+		
+
+		<div>
+			<div class="div0" id="div3">Click to</div>
+			<button class="btn btn-success" class="bn" id="bn2">DOWNLOAD</button>
+			<div class="div0" id="div4">Apache Lucene 8.7.0</div>
+		</div>
+		
+	</div>
+	
+
+</body>
+</html>

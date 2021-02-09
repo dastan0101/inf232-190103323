@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Work 8</title>
+	<link rel="stylesheet" type="text/css" href="HW_8.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#op").click(function() {
+				$("#advertising").show();
+			})
+		})
+	
+		$(document).ready(function() {
+			$("#cl").click(function() {
+				$("#advertising").hide();
+			})
+		})
+
+		$(document).ready(function() {
+			$("#in").click(function() {
+				$("#advertising").fadeIn(6000);
+			})
+		})
+
+		$(document).ready(function() {
+			$("#out").click(function() {
+				$("#advertising").fadeOut();
+			})
+		})
+
+		$(document).ready(function() {
+			$("#up").click(function() {
+				$("#advertising").slideUp("fast");
+			});
+		});
+
+		$(document).ready(function() {
+			$("#down").click(function() {
+				$("#advertising").slideDown("slow");
+			});
+		});
+
+		$(document).ready(function() {
+			$("#tog").click(function() {
+				$("#advertising").slideToggle(4000);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#ani").click(function(){
+			    $("#advertising").animate({
+			        right: '350px',
+			        opacity: '0.1',
+			        height: '400px',
+			        width: '600px',
+		        });
+		    });
+		});
+
+		$(document).ready(function() {
+			$("#stp").click(function() {
+				$("#advertising").stop();
+			})
+		})
+	</script>
+</head>
+<body style="margin: 0px">
+	<button id="op">Show</button>
+	<button id="cl">Hide</button>
+	<button id="in">FadeIn</button>
+	<button id="out">FadeOut</button>
+	<button id="up">SlideUp</button>
+	<button id="down">SlideDown</button>
+	<button id="tog">SlideToggle</button>
+	<button id="ani">Animate</button>
+	<button id="stp">Stop</button>
+	<div id="advertising"></div>
+</body>
+</html>

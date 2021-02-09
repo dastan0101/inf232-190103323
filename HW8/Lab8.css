@@ -1,0 +1,42 @@
+body {
+	margin: 0px;
+	display: flex;
+	/*justify-content: space-around;*/
+	padding-top: 50px;
+}
+#conteiner {
+	display: flex;
+	/*justify-content: space-around;*/
+}
+#border {
+	border: 2px solid darkblue;
+	width: 500px;
+	height: 50px;
+	display: flex;
+	/*justify-content: space-around;*/
+}
+.my_style { 
+	background-color: red;
+	width: 100px;
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+	position: relative;
+}
+#demo {
+	width: 1000px;
+	height: 100px;
+	background-color: aqua;
+	display: flex;
+}
+#div_1 {
+	position: relative;
+}
+#div_2 {
+	position: relative;
+	
+}
+
+
+
