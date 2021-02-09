@@ -1,0 +1,28 @@
+.fon {
+	background: url('park.jpg');
+	height: 100%;
+	width: 100%;
+}
+.link {
+	font-size: 20px;
+	text-decoration: none;
+	color: black; 
+	margin: 30px;
+}
+.top_part {
+	display: flex;
+	justify-content: space-around;
+}
+.menu {
+	
+}
+#area_style {
+	width: 70px;
+	height: 15px;
+	resize: none;
+}
+.title {
+	margin-top: 100px; 
+	margin-left: 100px;
+	color: white;
+}
