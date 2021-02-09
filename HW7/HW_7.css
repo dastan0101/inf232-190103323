@@ -1,0 +1,103 @@
+#bodyy {
+	background-color: #1BF5E3; 
+	margin: 0px
+}
+.bor {
+	border: 2px solid white;
+}
+.width_1 {
+	width: 170px;
+	height: 170px;
+	
+	}
+.width_2 {
+	width: 340px;
+	height: 170px;
+	
+}
+
+.table-td {
+	width: 170px;
+	border: red;
+}
+.menu {
+	background-color: hsl(210, 9%, 55%);
+	width: 170px;
+	text-align: center; 
+    vertical-align: middle;
+    border: 2px solid white;
+    border-color: white;
+    height: 35px
+}
+.a_tag {
+	color: white;
+}
+#services {
+	display: flex;
+
+}
+
+#left_part_tabs {
+	width: 250px;
+}
+.tab {
+	width: 200px;
+	height: 40px;
+	display: flex;
+	margin-top: 20px;
+	margin-left: 30px
+}
+.tab_1 {
+	background-color: blue;
+	width: 50px;
+}
+.tab_2 {
+	background-color: white;
+	width: 200px;
+}
+#info {
+	border-color: blue;
+	border:1px solid blue;
+	margin: 20px;
+	display: flex;
+	width: 740px;
+}
+#image_tab {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+}
+#text_tab {
+	padding: 10px;
+}
+#blog {
+	display: flex;
+	width: 1040px;
+}
+.blogClass {
+	width: 350px;
+	height: 400px;
+	border: 1px solid blue;
+	margin: 30px;
+	padding: 10px;
+
+}
+.sizee {
+	width: 50px;
+	height: 50px;
+}
+.center {
+	display: flex;
+	justify-content: space-around;
+}
+.none {
+	display: none;
+}
+.video_btn {
+	width: 90px;
+	height: 30px;
+}	
+#object_1 {
+	width: 1000px; 
+	height: 600px;
+}

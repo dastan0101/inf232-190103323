@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Использование jQuery метода .fadeToggle() (с callback функцией)</title>
+		<style>CSS стили</style>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+	$( document ).ready(function(){
+	  $( ".fadetoggle" ).click(function(){ // задаем функцию при нажатиии на элемент с классом fadetoggle
+	    $( "div" ).fadeToggle( 1000, "linear", function(){ // плавно отображаем, или скрываем элементы <div> в документе
+	       console.log("toggle completed"); // выводим в консоль браузера информацию о завершении метода для каждого элемента в наборе
+	    });
+	  });
+	});
+		</script>
+	</head>
+	<body>
+		<button class = "fadetoggle">Метод .toggle()</button>
+		<hr>
+		<div>Dastan</div>
+		<div>Talipov</div>
+		<div>Rustamovich</div>
+	</body>
+</html>
